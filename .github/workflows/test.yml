@@ -1,0 +1,28 @@
+name: Delete inactive branches
+
+on:
+  schedule:
+    - cron:  '0 18 * * *'
+
+jobs:
+  delete-inactive-branches:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Delete inactive branches
+      env:
+        INACTIVE_DAYS: 10
+      run: |
+        branches=$(git branch -r --merged | grep -v HEAD)
+        while read branch; do
+          branch_name=$(echo $branch | awk -F/ '{print $2}')
+          if [ $(git log -1 --since="$INACTIVE_DAYS days ago" --pretty=%B $branch) ]; then
+            echo "Deleting branch $branch_name"
+            git push origin --delete $branch_name
+          else
+            echo "Skipping branch $branch_name"
+          fi
+        done <<< "$branches"
