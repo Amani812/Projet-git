@@ -112,6 +112,16 @@ public class Produit {
         return p1.id==p2.id &&p1.prix ==p2.prix &&p1.libelle.equals(p2.libelle);
     }
 
+    public float calculerTVA(float tauxTVA) {
+        // Calcule la TVA pour le produit en utilisant le taux de TVA fourni
+        if (prix <= 0) {
+            System.out.println("Prix invalide. Impossible de calculer la TVA.");
+            return 0;
+        }
+
+        float tva = prix * tauxTVA / 100;
+        return tva;
+    }
 
 
 
