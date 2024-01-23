@@ -21,4 +21,11 @@ public class Vendeur extends Employe {
         double salaire = salaireFixe * (tauxDeVente / 100.0); // Salaire = Salaire fixe * taux de vente (en pourcentage)
         return salaire;
     }
+
+    @Override
+    public String toString() {
+        return "Vendeur{" +
+                "tauxDeVente=" + tauxDeVente +
+                '}';
+    }
 }
