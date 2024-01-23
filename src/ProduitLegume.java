@@ -20,4 +20,6 @@ class ProduitLegume extends Produit {
 
         return (parametreIndex - saisonIndex) <= 1;
     }
+
+
 }
