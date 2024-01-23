@@ -31,12 +31,6 @@ public class Caissier extends Employe {
         return salaire;
     }
 
-       // Nouvelle méthode pour imprimer un reçu
-       public void imprimerRecu(String article, double montant) {
-        System.out.println("Reçu de la caisse " + numeroDeCaisse + ":");
-        System.out.println("Article: " + article);
-        System.out.println("Montant: " + montant);
-        System.out.println("Merci de votre achat!");
-    }
+      
 }
 
