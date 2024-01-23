@@ -26,6 +26,13 @@ public class magazin {
 
     }
 
+    public boolean ajouterEmploye(Employe employe) {
+        if (nombreEmployes >= MAX_EMPLOYES) {
+            // Le nombre maximal d'employés est atteint
+            System.out.println("Le nombre maximal d'employés est atteint. Impossible d'ajouter plus d'employés.");
+            return false;
+        }
+
 
     public boolean addProducts(Produit produit) throws MagasinPleinException {
         if (chercherProduit(produit)) {
