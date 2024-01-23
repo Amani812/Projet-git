@@ -31,9 +31,6 @@ public class Caissier extends Employe {
         return salaire;
     }
 
-       // Nouvelle méthode pour obtenir le type d'employé
-    public String getTypeEmploye() {
-        return "Caissier";
-    }
+    
 }
 
