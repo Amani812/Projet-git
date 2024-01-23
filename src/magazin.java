@@ -171,31 +171,7 @@ public class magazin {
     }
 
 
-    public void afficherCaracteristiquesEmployes() {
-        System.out.println("Liste des employés du magasin " + this.nom + ":");
-        for (int i = 0; i < nombreEmployes; i++) {
-            Employe employe = employes[i];
-            System.out.println("Identifiant : " + employe.getId());
-            System.out.println("Nom : " + employe.getNom());
-            System.out.println("Adresse : " + employe.getAdresse());
-
-            // Afficher les caractéristiques spécifiques à chaque type d'employé
-            if (employe instanceof Caissier) {
-                Caissier caissier = (Caissier) employe;
-                System.out.println("Type : Caissier");
-                System.out.println("Numéro de Caisse : " + caissier.getNumeroDeCaisse());
-            } else if (employe instanceof Vendeur) {
-                Vendeur vendeur = (Vendeur) employe;
-                System.out.println("Type : Vendeur");
-                System.out.println("Taux de Vente : " + vendeur.getTauxDeVente() + "%");
-            } else if (employe instanceof Responsable) {
-                Responsable responsable = (Responsable) employe;
-                System.out.println("Type : Responsable");
-                System.out.println("Prime : " + responsable.getPrime() + " DT");
-            }
-            System.out.println(); // Ligne vide pour la clarté
-        }
-    }
+   
 
 
 
