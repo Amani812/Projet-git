@@ -15,15 +15,5 @@ public class Responsable extends Employe {
     }
 
     // Méthode pour calculer le salaire du responsable
-    @Override
-    public double calculerSalaire() {
-        double tauxHoraire = 10.0; // Taux horaire pour un responsable
-        int heuresNormales = 0; // Le nombre d'heures pour un responsable est généralement 0
-        double salaire = 0.0;
-
-        // Calcul du salaire en fonction de la prime
-        salaire = prime;
-
-        return salaire;
-    }
+   
 }
