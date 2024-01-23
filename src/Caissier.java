@@ -35,5 +35,8 @@ public class Caissier extends Employe {
         ventesRealisees += montantVente;
         System.out.println("Vente enregistrée pour le caissier " + getNom() + ". Montant de vente : " + montantVente);
     }
+    public boolean aAtteintQuotaVentes(double quota) {
+        return ventesRealisees >= quota;
+    }
 }
 
