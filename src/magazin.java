@@ -203,6 +203,15 @@ public class magazin {
             System.out.println(); // Ligne vide pour la clarté
         }
     }
+        public double calculerValeurStock() {
+            double valeurStock = 0.0;
+
+            for (Produit produit : produits) {
+                valeurStock += produit.getPrix();
+            }
+
+            return valeurStock;
+        }
 
 
 
