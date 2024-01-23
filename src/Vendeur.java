@@ -15,10 +15,5 @@ public class Vendeur extends Employe {
     }
 
     // Méthode pour calculer le salaire du vendeur
-    @Override
-    public double calculerSalaire() {
-        double salaireFixe = 450.0; // Salaire fixe pour un vendeur
-        double salaire = salaireFixe * (tauxDeVente / 100.0); // Salaire = Salaire fixe * taux de vente (en pourcentage)
-        return salaire;
-    }
+    
 }
