@@ -30,5 +30,12 @@ public class Caissier extends Employe {
 
         return salaire;
     }
+
+    @Override
+    public String toString() {
+        return "Caissier{" +
+                "numeroDeCaisse=" + numeroDeCaisse +
+                '}';
+    }
 }
 
