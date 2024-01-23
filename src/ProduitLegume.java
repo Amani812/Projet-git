@@ -20,4 +20,16 @@ class ProduitLegume extends Produit {
 
         return (parametreIndex - saisonIndex) <= 1;
     }
+
+    @Override
+    public String toString() {
+        return "ProduitLegume{" +
+                "id=" + id +
+                ", libelle='" + libelle + '\'' +
+                ", marque='" + marque + '\'' +
+                ", prix=" + prix +
+                ", dateExp=" + dateExp +
+                ", saison='" + saison + '\'' +
+                '}';
+    }
 }
