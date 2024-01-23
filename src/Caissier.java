@@ -30,5 +30,10 @@ public class Caissier extends Employe {
 
         return salaire;
     }
+
+    public void enregistrerVente(double montantVente) {
+        ventesRealisees += montantVente;
+        System.out.println("Vente enregistrée pour le caissier " + getNom() + ". Montant de vente : " + montantVente);
+    }
 }
 
