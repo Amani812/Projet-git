@@ -36,5 +36,8 @@ public class Employe {
     }
 
     // Méthode pour calculer le salaire (à être redéfinie dans les sous-classes)
-   
+    public double calculerSalaire() {
+        return 0.0; // Cette valeur sera remplacée dans les sous-classes (Caissier, Vendeur, Responsable)
+    }
+
 }
