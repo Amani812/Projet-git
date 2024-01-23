@@ -95,9 +95,7 @@ public class Produit {
         this.marque = marque;
     }
 
-    public String getMarque(){
-        return marque;
-    }
+    
 
     public void setDateExpiration(Date dateExp) {
         this.dateExp = dateExp;
