@@ -123,6 +123,16 @@ public class Produit {
         return tva;
     }
 
+    public boolean estPerime() {
+        if (dateExp == null) {
+            System.out.println("Date d'expiration non définie. Impossible de vérifier la péremption.");
+            return false;
+        }
+
+        Date dateActuelle = new Date();
+        return dateExp.before(dateActuelle);
+    }
+
 
 
 
