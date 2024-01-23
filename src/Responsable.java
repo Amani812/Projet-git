@@ -26,4 +26,12 @@ public class Responsable extends Employe {
 
         return salaire;
     }
+
+    public void afficherDetailsResponsable() {
+        System.out.println("Identifiant: " + getIdentifiant());
+        System.out.println("Nom: " + getNom());
+        System.out.println("Adresse: " + getAdresse());
+        System.out.println("Prime: " + prime);
+        System.out.println("Salaire: " + calculerSalaire());
+    }
 }
